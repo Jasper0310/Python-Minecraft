@@ -15,9 +15,7 @@ while True:
     if len(hits)>0:
         hit=hits[0]
         x,y,z=hit.pos.x,hit.pos.y,hit.pos.z
-        block=mc.getBlock(x,y,z)
-        mc.postToChat("恭喜你獵到了"+str(block))
-    
+        mc.setBlocks(x+1,y+1,z+1,x-1,y-1,z-1,7)
     
 
 
