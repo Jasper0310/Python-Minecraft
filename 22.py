@@ -15,7 +15,7 @@ while True:
     if len(hits)>0:
         hit=hits[0]
         x,y,z=hit.pos.x,hit.pos.y,hit.pos.z
-        mc.setBlocks(x+1,y+1,z+1,x-1,y-1,z-1,7)
+        mc.setBlocks(x+2,y+1,z+2,x-2,y-1,z-2,7)
     
 
 
